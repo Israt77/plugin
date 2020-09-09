@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!--<link rel="stylesheet" href="css/media.css">-->
+
+    <title>JQ</title>
+  </head>
+  <body>
+    <!--jq start-->
+  <section class=" example_1 bg-primary">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			
+          <div class="autoplay">
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/features.jpg" class="img-fluid" alt="girl"></div>
+          </div>
+
+    		</div>
+    	</div>
+    </div>
+  </section>
+
+  <!--example 2-->
+  <section class=" example_2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span class="counters">1,234,567.00</span>
+           <h1 class="counters">12345</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--example 3-->
+          <section class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="3s">
+          	<h1 class="h_1 text-center pt-2">HELLO</h1>
+          </section>
+
+  <!--example 4-->
+  <section class="example_4 animated slideInLeft">
+  	<h1 class="s_1">Web Design</h1>
+  </section>
+
+   <section class="example_4 animated slideInRight">
+  	<h1 class="s_1">Web Design</h1>
+  </section>
+
+  
+  <!--example 5-->
+  <section class=" example_6">
+  	<div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="b_area">
+           
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+            <div><img src="images/banner.jpg" class="img-fluid" alt="girl"></div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--example 6-->
+  <section class=" example_6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="type">
+           <h1 class="t_1">I am a<span class="type1"> </span></h1>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--example 7-->
+  <section class=" example_5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form">
+              <table>
+              	<tbody>
+              		<tr>
+              			<td><input type="text" name="name"></td>
+              			<td><button class="remove">-</button></td>
+              		</tr>
+              		<tr>
+              			<td><input type="text" name="name"></td>
+              			<td><button class="remove">-</button></td>
+              		</tr>
+              	</tbody>
+              </table>
+            <button  id="addRow">+Add</button>
+            <button id="getValues">Get Values</button>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <!--jq end-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <!--plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="vendor/counter-up-master/jquery.counterup.min.js"></script>
+    <script src= "js/Popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--example-1-->
+<script> 
+$(document).ready(function(){
+
+$('.autoplay').slick({
+  dots:true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows:false,
+});
+
+});
+</script> 
+  <!--example 2-->
+  <script>
+$(document).ready(function(){ 
+ $('.counters').counterUp({
+    delay: 10,
+    time: 1000
+});
+  
+});   
+  </script>  
+   <!--example 3-->
+  <script>
+$(document).ready(function(){ 
+  wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();  
+
+});   
+  </script>
+ <!--example 4-->
+<script>
+$(document).ready(function(){
+
+});   
+</script>  
+
+<!--example 5-->
+<script>
+$(document).ready(function(){ 
+  $('.b_area').slick({
+  dots:true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows:false,
+}); 
+
+});	
+</script> 
+<!--example 6-->
+<script>
+$(document).ready(function(){
+var typed = new Typed('.type1', {
+  strings: [' Designer', ' Developer','Freelancer'],
+  typeSpeed:60,
+  backSpeed:60,
+  loop:true,
+});
+});	
+</script>
+<!--example 7-->
+<script>
+	var html = '<tr><td><input type="text" name="name"></td></tr>';
+		html+= '<button class=" remove">-</button></td></tr>';
+$(document).ready(function(){
+	
+	$('#addRow').click(function(){
+
+		$('tbody').append(html);
+	});
+
+$(document).on('click','.remove',function(){
+    $(this).parents('tr').remove();
+});
+
+$('#getValues').click(function(){
+	var Values=[];
+	$('input[name="name"]').each(function(i,elem){
+		values.push($(elem).val());
+	});
+	alert(values.join(', '));
+});	
+
+}); 
+</script> 
+  </body>
+</html>
